@@ -23,7 +23,7 @@ public class Coche extends Thread {
         this.updatePosition = updatePosition;
         this.distanciaRecorrida = 0;
     }
-    
+
     @Override
     public void run() {
         while (distanciaRecorrida < distanciaMeta) {
