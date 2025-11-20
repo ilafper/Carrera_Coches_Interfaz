@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.2" orientation="VERTICAL" prefHeight="500.0" prefWidth="800.0" style="-fx-background-image: url('@fondoPista.png'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrera_coches_interfaz.HelloController">
+
+    <!-- Parte superior: encabezado -->
+    <items>
+        <AnchorPane prefHeight="120.0" style="-fx-background-color: #B71C1C;">
+            <children>
+                <Label layoutX="280.0" layoutY="32.0" prefHeight="28.0" prefWidth="240.0" style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-alignment: center;" text="COPA PISTON" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Droid Sans" size="26.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="68.0" fitWidth="124.0" layoutX="502.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                    <image><Image url="@bandera2.png" /></image>
+                </ImageView>
+                <ImageView fitHeight="68.0" fitWidth="124.0" layoutX="214.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 360;">
+                    <image><Image url="@bandera2.png" /></image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+
+        <!-- Parte inferior: pista de coches -->
+        <AnchorPane prefHeight="480.0" style="-fx-background-color: #B71C1C;">
+
+            <!-- META REPETIDA (manteniendo tu imagen de meta) -->
+            <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="744.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                <image><Image url="@meta.png" /></image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="744.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                <image><Image url="@meta.png" /></image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="744.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                <image><Image url="@meta.png" /></image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="743.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                <image><Image url="@meta.png" /></image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="743.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+                <image><Image url="@meta.png" /></image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="743.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+                <image><Image url="@meta.png" /></image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="743.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+                <image><Image url="@meta.png" /></image>
+            </ImageView>
+
+            <!-- Botón iniciar carrera -->
+            <Button layoutX="325.0" layoutY="323.0" onAction="#iniciarCarrera" prefHeight="40" prefWidth="120" style="-fx-background-color: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 3;" text="Iniciar Carrera" />
+
+            <!-- Pistas de coches con colores uniformes -->
+            <Pane layoutX="3.0" layoutY="1.0" prefHeight="74.0" prefWidth="741.0" style="-fx-background-color: #B71C1C;">
+                <children>
+                    <ImageView fx:id="RayoMcquuen" fitHeight="35.0" fitWidth="78.0" layoutX="23.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                        <image><Image url="@coche2.png" /></image>
+                    </ImageView>
+                </children>
+            </Pane>
+
+            <Pane layoutX="3.0" layoutY="69.0" prefHeight="82.0" prefWidth="741.0" style="-fx-background-color: #F5F5F5;">
+                <children>
+                    <ImageView fx:id="Mate" fitHeight="55.0" fitWidth="51.0" layoutX="27.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                        <image><Image url="@mate.png" /></image>
+                    </ImageView>
+                </children>
+            </Pane>
+
+            <Pane layoutX="3.0" layoutY="152.0" prefHeight="74.0" prefWidth="741.0" style="-fx-background-color: #1E88E5;">
+                <children>
+                    <ImageView fx:id="azulito" fitHeight="35.0" fitWidth="130.0" layoutX="23.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                        <image><Image url="@azulitoo.png" /></image>
+                    </ImageView>
+                </children>
+            </Pane>
+
+            <Pane layoutX="3.0" layoutY="227.0" prefHeight="74.0" prefWidth="741.0" style="-fx-background-color: #212121;">
+                <children>
+                    <ImageView fx:id="storm" fitHeight="35.0" fitWidth="78.0" layoutX="23.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                        <image><Image url="@villanoCoche.png" /></image>
+                    </ImageView>
+                </children>
+            </Pane>
+            <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="743.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+               <Image url="@meta.png" />
+            </image>
+            </ImageView>
+
+        </AnchorPane>
+    </items>
+</SplitPane>
